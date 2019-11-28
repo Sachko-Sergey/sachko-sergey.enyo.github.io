@@ -1,0 +1,479 @@
+@font-face {
+    font-family: 'Bebas Neue Bold';
+    src: url('../fonts/bebasNeue/BebasNeueBold.eot');
+    src: url('../fonts/bebasNeue/BebasNeueBold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/bebasNeue/BebasNeueBold.woff') format('woff'),
+    url('../fonts/bebasNeue/BebasNeueBold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    background: url(../images/main-bg.jpg) center no-repeat;
+    background-size: cover;
+    height: 5690px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+
+.header {
+    margin-bottom: 180px;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.header__menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 392px;
+}
+
+.header__menu-link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
+    transition: color .2s linear;
+    -webkit-transition: color .2s linear;
+    -moz-transition: color .2s linear;
+    -ms-transition: color .2s linear;
+    -o-transition: color .2s linear;
+}
+
+.header__menu-link:hover {
+    color: #25365d;
+}
+
+.btn-search {
+    background:none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: opacity .2s linear;
+    -webkit-transition: opacity .2s linear;
+    -moz-transition: opacity .2s linear;
+    -ms-transition: opacity .2s linear;
+    -o-transition: opacity .2s linear;
+}
+
+.btn-search:hover {
+    opacity: .7;
+}
+
+
+/* =====================  INTRO ================== */
+
+.intro {
+    text-align: center;
+    margin-bottom: 628px;
+}
+
+.intro__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.intro__title {
+    font-family: 'Bebas Neue Bold';
+    font-weight: 700;
+    font-size: 91px;
+    letter-spacing: 5.46px;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.intro__descr {
+    color: #bbd8ff;
+    font-family: "Open Sans";
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 42px;
+    margin-bottom: 55px;
+    max-width: 815px;
+}
+
+.button {
+    line-height: 1;
+    cursor: pointer;
+    padding: 19px 55px 22px 55px;
+    background-color: #244faa;
+    border: none;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    transition: background-color .2s linear;
+    -webkit-transition: background-color .2s linear;
+    -moz-transition: background-color .2s linear;
+    -ms-transition: background-color .2s linear;
+    -o-transition: background-color .2s linear;
+}
+
+.button:hover {
+    background-color: #324674;
+}
+
+.button-icon {
+    padding-left: 77px;
+    position: relative;
+}
+
+.button-icon::before {
+    content: '';
+    background: url(../images/icons/save-file.png) no-repeat;
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    left: 39px;
+    top: 24px;
+}
+
+
+/* =====================  FREE ================== */
+
+.free {
+    margin-bottom: 145px;
+}
+
+.free::before {
+    content: 'free resources';
+    color: #ffffff;
+    font-family: "Bebas Neue Bold";
+    font-size: 261px;
+    font-weight: 400;
+    line-height: 150px;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    margin-bottom: -100px;
+}
+
+.free__inner {
+    position: relative;
+    display: flex;
+}
+
+.title {
+    color: #25365d;
+    font-family: "Bebas Neue Bold";
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.free__inner-text {
+    color: #00345f;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    margin-bottom: 45px;
+    max-width: 696px;
+}
+
+.free__inner-list {
+    color: #93aac9;
+    padding: 0;
+    list-style-type: none;
+    margin-bottom: 65px;
+}
+
+.free__inner-listItem {
+    margin-bottom: 20px;
+    padding-left: 38px;
+    position: relative;
+}
+
+.free__inner-listItem::before {
+    content: '';
+    background-image: url(../images/free/checked-list.png);
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: 0;
+    top: 2px;
+}
+
+.free__inner-listItem:last-child {
+    margin-bottom: 0;
+}
+
+.free__inner-img {
+    position: absolute;
+    right: -223px;
+}
+
+
+/* =====================  ADVANTAGES ================== */
+
+.advantages {
+    padding: 145px 0 56px 0;
+    background-color: #f7f9fb;
+    margin-bottom: 155px;
+}
+
+.advantages__inner {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.advantages__item {
+    flex-basis: 33.33333%;
+    padding-left: 90px;
+    position: relative;
+    margin-bottom: 79px;
+}
+
+.advantages__title {
+    letter-spacing: 0.55px;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #25365d;
+    margin-bottom: 29px;
+}
+
+.advantages__text {
+    letter-spacing: 0.4px;
+    line-height: 30px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #5a5a5a;
+}
+
+.advantages__item img {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+
+/* =====================  FEATURES ================== */
+
+.features {
+    margin-bottom: 175px;
+}
+
+.center-title {
+    text-align: center;
+}
+
+.ta__right {
+    text-align: right;
+}
+
+.features__inner {
+    margin-top: 147px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.features__col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.features__col-item {
+    min-width: 177px;
+}
+
+.features__col-item_title {
+    padding-bottom: 5px;
+    color: #25365d;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 32px;
+    margin-bottom: 17px;
+    border-bottom: 1px solid #ff2868;
+}
+
+.features__col-item_text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #5a5a5a;
+}
+
+
+/* =====================  PLANS ================== */
+
+
+.plans {
+    background-color: #f7f9fb;
+    padding: 152px 0 119px 0;
+    margin-bottom: 100px;
+}
+
+.plans__inner {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 77px;
+}
+
+.plans__descr {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 74px;
+    color: #5a5a5a;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 32px;
+}
+
+.plans__item {
+    padding: 40px 81px;
+    box-shadow: 0 2px 55px #f5f5f5;
+    background-color: #ccc;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.plans__item-title {
+    letter-spacing: 0.36px;
+    text-transform: uppercase;
+    line-height: 36px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #5a5a5a;
+    margin-bottom: 59px;
+}
+
+.dol {
+    color: #25365d;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 65.47px;
+    letter-spacing: 0.44px;
+}
+
+.dol-price {
+    color: #25365d;
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 1.44px;
+}
+
+.plans__item-price {
+    color: #5a5a5a;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0.44px;
+    margin-bottom: 35px;
+}
+
+.plans__item-text {
+    color: #5a5a5a;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0.36px;
+}
+
+
+/* =====================  QUESTIONS================== */
+
+.questions {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.questions__title {
+    margin: 31px 0 32px;
+    color: #25365d;
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.44px;
+    line-height: 36px;
+}
+
+.questions__text {
+    color: #5a5a5a;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 32px;
+    width: 523px;
+    margin-bottom: 65px;
+}
+
+.questions__link-contact {
+    display: flex;
+    align-items: center;
+    min-width: 530px;
+    justify-content: space-between;
+}
+
+.link-contact__mail {
+    display: flex;
+    align-items: center;
+}
+
+.link-contact__phone {
+    display: flex;
+    align-items: center;
+}
+
+.link-contact__phone a, .link-contact__mail a {
+    padding-left: 12px;
+    color: #25365d;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 30px;
+    text-decoration: none;
+}
+
+.link-contact__phone a:hover, .link-contact__mail a:hover {
+    text-decoration: underline;
+}
+
+
+/* =====================  END ================== */
+
+.end__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.end__descr {
+    margin-top: 0;
+}
